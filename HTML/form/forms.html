@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Outdoor Recreation Registration Form</h1>
+    <h3>Coding Dojo Camping Retreat 2022</h3>
+    <form action="">
+        <h4>Personal Info:</h4>
+        <div>
+            <label for="first_name">*First Name</label>
+            <input type="text" name="first_name" id="first_name" required>
+            
+            <label for="last_name">*Last Name</label>
+            <input type="text" name="last_name" id="last_name" required>
+
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+
+            <label for="graduation">Graduation Year</label>
+            <input type="number" min="2000" max="2022" step="1" value="2022" />
+        </div>
+        
+        <h4>Contact Info:</h4>
+        <div>
+            <label for="email_address">*Email Address</label>
+            <input type="email" name="email_address" id="email_address">
+
+            <label for="password">*Password</label>
+            <input type="password" name="password" id="password">
+
+            <label for="number">Number</label>
+            <input type="tel">
+        </div>
+        
+        <h4>Activities</h4>
+        <div>
+            <label for="fav_activity">Favorite Outdoor Activity</label>
+
+            <input type="radio" name="fav_activity" id="climbing">
+            <label for="climbing">Climbing</label>
+
+            <input type="radio" name="fav_activity" id="hiking">
+            <label for="hiking">Hiking</label>
+
+            <input type="radio" name="fav_activity" id="swimming">
+            <label for="swimming">Swimming</label>
+
+            <input type="radio" name="fav_activity" id="biking">
+            <label for="biking">Biking</label>
+
+            <input type="radio" name="fav_activity" id="dirt-biking">
+            <label for="tanning">Dirt Biking</label>
+        </div>
+
+        <div>
+            <label for="day_activities">Day Activities</label>
+
+            <input type="checkbox" name="waterSkiing" id="waterSkiing">
+            <label for="waterSkiing">Water Skiing</label>
+
+            <input type="checkbox" name="crafts" id="crafts">
+            <label for="crafts">Crafts</label>
+
+            <input type="checkbox" name="boating" id="boating">
+            <label for="boating">Boating</label>
+
+            <input type="checkbox" name="sleeping" id="sleeping">
+            <label for="sleeping">Sleeping</label>
+
+            <input type="checkbox" name="wittling" id="wittling">
+            <label for="wittling">Wittling</label>
+
+            <input type="checkbox" name="singing" id="singing">
+            <label for="singing">Singing</label>
+
+            <input type="checkbox" name="games" id="games">
+            <label for="games">Games</label>
+
+        </div>
+
+        <h4>Food</h4>
+        <div>
+            <label for="allergies">Allergies</label>
+            <select name="allergies" id="allergies">
+                <option value="allergies" disabled>Allergies</option>
+                <option value="peanuts">peanuts</option>
+                <option value="pollen">Pollen</option>
+                <option value="animals">Animals</option>
+                <option value="everything">Everything Take me hoooooome!</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="food">Food Suggestions</label>
+            <textarea type="" name="food" id="food"></textarea>
+        </div>
+
+        <h4>Activities:</h4>
+        <div>
+            <label for="night_activities">Night Activities</label>
+            <select name="nightActivities" id="nightActivities">
+                <option value="nightGames">Night Games</option>
+                <option value="smores">S'mores</option>
+                <option value="sleeping">Sleeping</option>  
+                <option value="hotSprings">Hot Springs</option>
+                <option value="starGazing">Star Gazing</option>
+            </select>
+        </div>
+
+        <h4>Volunteer</h4>
+        <div>
+            <label for="newsletter">You want to help us plan!!</label>
+            <input type="checkbox" name="newsletter" id="news" checked>
+        </div>
+
+        <input type="submit" value="Let's Go!!">
+    </form>
+</body>
+</html>
