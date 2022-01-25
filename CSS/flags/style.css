@@ -1,0 +1,28 @@
+ *{padding: 0px; margin: 0; background-color: rgb(222, 222, 222); box-sizing: content-box;}
+ body{padding:25px;}
+ p{padding: 25px 0 15px 0; font-size:18px;}
+ .flag{height:200px; width:400px; overflow: hidden; background-color: white;
+    box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.24);}
+
+ /* Japan */
+.red-circle{background-color:red; height:75px; width: 75px; border-radius:50%; position: relative;  margin-left:140px; margin-top:60px;}
+
+/* Finland */
+.vertical-cross{background-color: #0168AA; height:100%; width: 40px; margin-left:60px;}
+.horizontal-cross{background-color: #0168AA; width: 100%; height: 40px; margin-top: -120px;}
+
+/* Greece */
+.greece{background-color:#0507F0; border-bottom:solid 25px #0507F0;}
+.cross{width: 125px; height:100px; background-color:#0507F0; position: relative; z-index: 10;}
+    .verti-line{background-color:white; width: 125px; height:20px; margin-top:50px; display: inline-block;}
+    .hor-line{background-color:white; height:126px; width:20px; margin-top:-75px; margin-left:50px; display: inline-block;}
+    .white{background-color: #0507F0; height:25px; width: 100%;  border-bottom:solid 25px white; }
+        .white.one{margin-top:-100px;}
+
+/* republic */
+.republic{position: relative;}
+.white-line{height:50%; width: 100%; background-color: white;}
+.red-line{height:50%; width: 100%; background-color: red;}
+.blue-triangle{display: inline-block; border-top: solid 100px blue; background:transparent; border-right: solid 100px transparent; border-bottom: solid 100px transparent; border-left: solid 100px transparent; transform: rotate(-90deg);position: absolute;top: 0; z-index: 100;}
