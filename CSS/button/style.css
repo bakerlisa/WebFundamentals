@@ -1,4 +1,8 @@
-.button{display: block;}
-    .button.one{border-radius:25px; background-color: #F5F5F5; text-align: center; }
-    .button.two{}
-    .button.three{}
+.button{display: block; font-family: 'Roboto', sans-serif; text-decoration: none; text-align: center;} 
+.button:hover{cursor: pointer;}
+    .button.one{border-radius:25px; background-color: #F5F5F5; width:200px; padding:10px; color: #67BCBD; border:solid 2px #67BCBD;  font-weight:bold; transition: all .20s ease-in;}
+        .button.one:hover{background-color: #67BCBD; color:white; transition: all .20s ease-in;}
+    .button.two{background-color: #67BCBD; padding:10px; width:20px; height:20px;  margin-top:25px; border-radius:100%; color:white; font-weight:600; font-size:20px; ;line-height: 0; display: flex; align-items: center; justify-content: center; transition: all .20s ease-in;}
+        .button.two:hover{background-color: #F5F5F5; color:#67BCBD; transition: all .20s ease-in;}
+    .button.three{margin-top: 25px; background-color: #2B77E4; color:white; width: 150px; padding: 15px; font-weight:300; border:solid 5px black; box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); transition:all .20s ease-in;}
+        .button.three:hover {color:#2B77E4; background-color: transparent; transition:all .20s ease-in;}
