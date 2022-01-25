@@ -1,0 +1,5 @@
+*{padding: 0;margin: 0;}
+h1{font-family: 'Permanent Marker', cursive; background-color: black; color: #fff; padding: 10px 25px; font-size:50px; margin:10px 20px;}
+h1 span{color: #55FFFF;}
+h2{font-family: 'Permanent Marker', cursive; text-align: center; font-style:italic; color:#ffffff; background-color:#cfa7f7; padding: 25px; margin:10px 20px}
+h3{font-family: 'Permanent Marker', cursive; margin:10px 20px; background-color:#9FC5F8; text-align:right; color:#2B215D; text-decoration:underline;}
