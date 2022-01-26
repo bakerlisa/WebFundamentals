@@ -1,8 +1,6 @@
 /* global styles */
 *{margin: 0; padding: 0;}
-
 body{background-color: #FCFCFF;}
-
 img{max-width:200px;display: block;}
 
 h1{font-family: 'Comfortaa', cursive; color:#F7CE55; padding: 25px; text-align: center; font-size: 50px; position: relative;}
@@ -15,7 +13,6 @@ h1 span.visible{transition: all .25s ease-in;}
 .row{ display: flex; margin: 25px auto; padding: 25px; display: flex; max-width:800px;}
     .one{background-color: #5A2144;align-items: center;justify-content: space-between;}
     .two{background-color: #3E629C; align-items: center; justify-content: center; gap:50px}
-        .two p{}
     .three{background-color: #7C1D72; align-items: center; justify-content: space-around;}
 
 .block{position: relative;}
