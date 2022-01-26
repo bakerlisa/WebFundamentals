@@ -14,7 +14,7 @@ body{background-color:##F2F2F2; padding: 25px; font-family: 'Playfair Display', 
 /* hover elements */
 .bar{position: relative;}
     .bar:before{content:''; background-color: #F28705; max-width:0; width: 100%; height: 100%; position: absolute; top: 0; left: 0; transition: all .25s ease-in;}
-        .bar:nth-child(1):hover:before{max-width:300px; transition: all .25s ease-in;}
+    .bar:nth-child(1):hover:before{max-width:300px; transition: all .25s ease-in;}
     .bar:nth-child(2):before{max-width:0px; transition: all .25s ease-in;}
         .bar:nth-child(2):hover:before{max-width:175px; animation: showBar .5s ease-in;}
     .bar:nth-child(3):before{max-width:0px; transition: all .25s ease-in;}
@@ -23,7 +23,8 @@ body{background-color:##F2F2F2; padding: 25px; font-family: 'Playfair Display', 
         .bar:nth-child(4):hover:before{max-width:120px; animation: showBar .5s ease-in;}
 
 /* bar spans */
-.bar span{opacity: 0; position: absolute; right:0;}
+.bar span{opacity: 0; position: absolute; right:25px;}
+.bar:hover >span{opacity: 1; color:gray}
 
     
 
