@@ -10,9 +10,14 @@
     .nav-links li a:hover, .nav-links li a.active:hover{color:#14A2B8; transition: all .25s ease-in;}
 .nav-links li a.active{color:white;}
 
+/* li images */
 .nav-links li img{z-index: -1; position: absolute; max-width:500px; width: 100%; top: -100px; left:0; right: 0; margin:0 auto; opacity: 0; transition: all .25s ease-in;}
     .nav-links li:hover img,
     .nav-links li:last-child:hover img{top: 100px; opacity: 1; transition: all .25s ease-in;}
+/* li p */
+.nav-links li p, .nav-links li:last-child p{text-align:center; position: absolute; bottom: -50px;left: 0; right: 0; margin:0 auto; color:black; opacity: 0; transition: all .25s ease-in;}
+.nav-links li:hover  a > p,
+.nav-links li:last-child:hover p{ bottom:50px; opacity: 1; transition: all .25s ease-in;}
 
 .nav-links .btn{position: relative; background-color: transparent; border:none; }
 .nav-links .btn span{padding:10px 20px; z-index: 10; display: block; background-color:#14A2B8; border:solid 2px black;  color:white; position: relative;}
