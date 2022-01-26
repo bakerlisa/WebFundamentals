@@ -1,0 +1,23 @@
+/* GLOBAL */
+*{font-family: 'Roboto', sans-serif; padding: 0;margin: 0;}
+
+/* NAV */
+.nav{background-color: #333333; padding: 25px; color:white}
+.nav, .nav-links{display: flex; align-items: center; justify-content: space-between; }
+
+.nav-links li{list-style-type: none; padding:0 10px}
+.nav-links li a{text-decoration: none; color:#CCCCCC; transition: all .25s ease-in;}
+    .nav-links li a:hover, .nav-links li a.active:hover{color:#14A2B8; transition: all .25s ease-in;}
+.nav-links li a.active{color:white;}
+
+.nav-links li img{z-index: -1; position: absolute; max-width:500px; top: -100px; left:0; right: 0; margin:0 auto; opacity: 0; transition: all .25s ease-in;}
+    .nav-links li:hover img,
+    .nav-links li:last-child:hover img{top: 100px; opacity: 1; transition: all .25s ease-in;}
+
+.nav-links .btn{position: relative; background-color: transparent; border:none; }
+.nav-links .btn span{padding:10px 20px; z-index: 10; display: block; background-color:#14A2B8; border:solid 2px black;  color:white; position: relative;}
+    .nav-links .btn:hover{cursor:pointer; }
+    .nav-links .btn:before{content:''; height:100%; width: 100%; background-color: black; position: absolute; top: 5px; left: 5px;z-index: 1; display: block; transition: .25s ease-in;}
+    .nav-links .btn:hover:before{top:0; left: 0; transition: .25s ease-in;}
+
+
