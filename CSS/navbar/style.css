@@ -10,7 +10,7 @@
     .nav-links li a:hover, .nav-links li a.active:hover{color:#14A2B8; transition: all .25s ease-in;}
 .nav-links li a.active{color:white;}
 
-.nav-links li img{z-index: -1; position: absolute; max-width:500px; top: -100px; left:0; right: 0; margin:0 auto; opacity: 0; transition: all .25s ease-in;}
+.nav-links li img{z-index: -1; position: absolute; max-width:500px; width: 100%; top: -100px; left:0; right: 0; margin:0 auto; opacity: 0; transition: all .25s ease-in;}
     .nav-links li:hover img,
     .nav-links li:last-child:hover img{top: 100px; opacity: 1; transition: all .25s ease-in;}
 
@@ -19,5 +19,11 @@
     .nav-links .btn:hover{cursor:pointer; }
     .nav-links .btn:before{content:''; height:100%; width: 100%; background-color: black; position: absolute; top: 5px; left: 5px;z-index: 1; display: block; transition: .25s ease-in;}
     .nav-links .btn:hover:before{top:0; left: 0; transition: .25s ease-in;}
+
+@media all and (max-width:600px){
+    .nav{flex-wrap:wrap; flex-direction:column; width: 100%;}
+        .nav-links li:last-child{position: absolute;top: 20px; right: -0px;}
+
+}
 
 
