@@ -5,83 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet Lisa</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.svg"/>
     <meta name="description" content="A page about Lisa Broadhead in all her glory and fantastic-ness! Enjoy World!">
     <script src="https://kit.fontawesome.com/402ff570bf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Lisa Broadhead</h1>
-    <img src="img/me.jpg" alt="image of Lisa Broadhead" />
-    <ul class="social">
-        <li><a href="https://www.linkedin.com/in/lisa-broadhead/"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/lisabroadhead"><i class="fab fa-github"></i></a></li>
-        <li><a href="" data-el1="lb.broadhead" data-el2="gmail" class="el"><i class="fas fa-envelope"></i></a></li>
-    </ul>
-    <p>Social Media Ap made in Python! <a href="#">Code</a> | <a href="#">Deployed</a></p>
+    <nav class="nav">
+        <div class="content-wrapper">
+            <div class="logo-wrapper"><img src="img/favicon.svg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio" class="active">My Profile </a></li>
+                <li><a href="#connections">Find Connections    </a></li>
+                <li><button href="#" data-el1="lb.broadhead" data-el2="gmail" class="el btn">Contact Me!</button></li>
+            </ul>
+        </div>
+    </nav>
 
-    <h2>About</h2>
-    <p>Well I've had a bit experience in the web world! I love to code. I love the challenge, how you are always having to learn something new, the code / languages, and the prblem solving. I still have days when my brain feels like its bleeding with all the thinking its had to do that day!</p>
-    <p>When I'm not on my computer I'm on the opposite end of the spectrum. I'm outside where there's no reception! I love the sun the mountains and the feel of my muscles burning! I have a dog that makes me more friends than I ever could on my own, and a family that I can't get enough of.</p>
-    <h2>Hobbies</h2>
-    <ul>
-        <li>Trail running, obstacle course race, weight lifting, working out,  rock climbing, yoga!</li>
-        <li>Redoing Furniture</li>
-        <li>Baking Sour Dough Bread</li>
-        <li>Reading</li>
-        <li>Kayaking</li>
-        <li>Camping</li>
-        <li>Love movies and Documentaries</li>
-        <li>Puzzles</li>
-    </ul>
+    <main class="content-wrapper">
+        <div class="texture-one texture"></div>
+        <div class="texture-two texture"></div>
+        <div class="texture-three texture"></div>
+        <div class="texture-four texture"></div>
 
-    <h2>Technologies</h2>
-    <table>
-        <tr>
-            <th>Languages</th>
-            <th>Libraries</th>
-            <th>FrameWorks/CMS</th>
-            <th>Other</th>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>SASS</td>
-            <td>WordPress</td>
-            <td>Git</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>jQuery</td>
-            <td>Miva</td>
-            <td>Adobe Suite</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>GreenSock</td>
-            <td>Bootstrap</td>
-            <td>WooCommerce, Shopify, PrestaShop</td>
-        </tr>
-        <tr>
-            <td>PHP</td>
-            <td>MagicScroll</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+        <h1>Lisa Broadhead</h1>
+        <img src="img/me.jpg" alt="image of Lisa Broadhead" class="profile-pic"/>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/lisa-broadhead/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/lisabroadhead"><i class="fab fa-github"></i></a></li>
+            <li><a href="" data-el1="lb.broadhead" data-el2="gmail" class="el"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p>Social Media Ap made in Python! <a href="#">Code</a> | <a href="#">Deployed</a></p>
 
-    <h2>Contact Me</h2>
-    <p>If you want to connect more, shoot me an email!</p>
-    <form action="#">
-        <label for="full_name">Full Name</label>
-        <input type="text" name="full_name" id="full_name">
+        <h2>About</h2>
+        <p>Well I've had a bit experience in the web world! I love to code. I love the challenge, how you are always having to learn something new, the code / languages, and the prblem solving. I still have days when my brain feels like its bleeding with all the thinking its had to do that day!</p>
+        <p>When I'm not on my computer I'm on the opposite end of the spectrum. I'm outside where there's no reception! I love the sun the mountains and the feel of my muscles burning! I have a dog that makes me more friends than I ever could on my own, and a family that I can't get enough of.</p>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Trail running, obstacle course race, weight lifting, working out,  rock climbing, yoga!</li>
+            <li>Redoing Furniture</li>
+            <li>Baking Sour Dough Bread</li>
+            <li>Reading</li>
+            <li>Kayaking</li>
+            <li>Camping</li>
+            <li>Love movies and Documentaries</li>
+            <li>Puzzles</li>
+        </ul>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <h2>Technologies</h2>
+        <table>
+            <tr>
+                <th>Languages</th>
+                <th>Libraries</th>
+                <th>FrameWorks/CMS</th>
+                <th>Other</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>SASS</td>
+                <td>WordPress</td>
+                <td>Git</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>jQuery</td>
+                <td>Miva</td>
+                <td>Adobe Suite</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>GreenSock</td>
+                <td>Bootstrap</td>
+                <td>WooCommerce, Shopify, PrestaShop</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>MagicScroll</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
 
-        <label for="reason">Reason for distributing my silence!</label>
-        <textarea name="reason" id="reason" cols="30" rows="10"></textarea>
+        <h2>Contact Me</h2>
+        <p>If you want to connect more, shoot me an email!</p>
+        <form action="#">
+            <label for="full_name">Full Name</label>
+            <input type="text" name="full_name" id="full_name">
 
-        <input type="submit" value="Send">
-    </form>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="reason">Reason for distributing my silence!</label>
+            <textarea name="reason" id="reason" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </main>
 
     <script src="script.js"></script>
 </body>

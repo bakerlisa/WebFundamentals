@@ -1,2 +1,39 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --pink: #F2D8CE;
+    --dk-blue: #0E5673;
+    --blue: #80A7BF;
+  }
+
 *{padding: 0;margin: 0;}
+html, body {margin:0px; height:100%; }
 img{display: block; max-width: 100%;}
+.content-wrapper{max-width:1425px; margin:0 auto; position: relative; z-index:100;}
+
+/* nav */
+nav{background-color: var(--pink);display: flex; justify-content: space-between; align-items: center; position: relative;}
+    /* list items */
+    .nav-links{display: flex; align-items: center; gap:20px; padding-right:25px;}
+    .nav-links li{list-style-type: none;}
+    .nav-links a{color: var(--blue); text-decoration: none;}
+    nav .btn{background-color:var(--dk-blue); border:none; padding:10px 20px; color:var(--pink);}
+    /* logo */
+    .logo-wrapper{height:75px;  position: relative;}
+    .logo-wrapper img{max-width:100px; width: auto; position: absolute; top:20px; display: block; left:25px;}
+
+/* main */
+
+/* profile */
+.profile-pic{max-width:200px; border-radius:50%;}
+
+/* textures */
+.texture{position: absolute; z-index: -1; }
+.texture-one{height:100%; width:50px;  top: 0; lefT:50px; background-image: url('img/textures/moroccan-flower.png'); background-repeat: repeat; opacity:.5;}
+.texture-two{left:115px; width: 10px; height:100%; background-color: var(--pink); opacity:.3;}
+.texture-three{bottom:0; right:0; background-color: var(--pink); opacity:.3; width:200px; height:50%;}
+.texture-four{background-color: var(--pink); height:50px; width: 100%; bottom:0; left:0;}
+
+    @media all and (max-width:600px){
+
+    }
