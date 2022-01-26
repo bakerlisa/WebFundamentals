@@ -15,9 +15,10 @@ h1 span.visible{transition: all .25s ease-in;}
     .two{background-color: #3E629C; align-items: center; justify-content: center; gap:50px}
     .three{background-color: #7C1D72; align-items: center; justify-content: space-around;}
 
+/* block */
 .block{position: relative;}
-.block > img{display: block; position: relative; z-index: 10; transform: rotateY(0deg); transition: all .25s ease-in;}
+    .block > img{display: block; position: relative; z-index: 10; transform: rotateY(0deg); transition: all .25s ease-in;}
     .block:hover > img{opacity: 0; transform: rotateY(90deg); transition: all .25s ease-in;}
-.block > p{font-family: 'Comfortaa', cursive; color:#7DCEDA; position: absolute; top: 50%; transform: translateY(-50%); left: 0;right: 0; text-align: center;opacity: 0; z-index: 1; transition: all .25s ease-in;}
+    .block > p{font-family: 'Comfortaa', cursive; color:#7DCEDA; position: absolute; top: 50%; transform: translateY(-50%); left: 0;right: 0; text-align: center;opacity: 0; z-index: 1; transition: all .25s ease-in;}
     .block:hover > p{opacity: 1; transition: all .25s ease-in;}
     
