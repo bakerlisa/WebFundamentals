@@ -15,7 +15,9 @@ body{margin: 0 25px;}
 
 /* CARD */
 #card{max-width:700px; width:100%; margin:25px auto 0 auto; padding: 25px; border:solid 3px var(--gray); position: relative; display: flex;flex-wrap: wrap; flex-direction: column;}
-    #card:before{content:''; height:75px; width: 100%; position: absolute; top: 0; left: 0; background-color:var(--blue);}
+    #card:before{content:''; height:75px; width: 100%; position: absolute; top: 0; left: 0; background-color:var(--blue); }
+    /* CARD ACTIVE*/
+    .active #card{animation: cardShimmy 7s ease-in 2s;}
 
 /* icon-wrp */
 .icon-wrp{width: 125px; position: relative; z-index: 10; padding-right: 25px;}
@@ -42,15 +44,17 @@ body{margin: 0 25px;}
 
 /* shark */
 body:before{content:'';  height:10px; width: 100%;}
-body.active:before{height:1000px;  background-color:var(--lt-blue); position: absolute; bottom:0; left: 0; animation: waterRise 5s ease-in;}
+body.active:before{height:1000px; z-index: 100;  background-color:var(--lt-blue); position: absolute; bottom:0; left: 0; animation: waterRise 5s ease-in;}
 
-.chomp{display: none; transform:rotate(90deg); position: absolute; bottom:-350px; left: 0;right: 0; margin:0 auto;}
+.chomp{display: none; transform:rotate(90deg); position: absolute; bottom:-350px; left: 0;right: 0; margin:0 auto; z-index: 101;}
 .active .chomp{ display: block; bottom:800px;  animation: sharkChase 5s ease-in 1s;}
 
 /* speech */
-.speech-bubble{position: absolute; top: -150px; left: -225px; height:150px; text-align: center;}
-.speech-bubble
-.speech-bubble .speech{width:auto; transform: scale(-1, 1); height:150px;  display: block;}
+.speech-bubble{position: absolute; top: -150px; left: -225px; height:175px; text-align: center; display: none; opacity: 0;}
+.speech-bubble p{padding-top: 50px; position: absolute; top: -5px; left:20px}
+.speech-bubble .speech{width:auto; transform: scale(-1, 1); height:175px;  display: block;}
+
+.active .speech-bubble{display: block; opacity: 0; animation: wordReveal 2s ease-in 1.5s;}
 
 @keyframes waterRise{
     0%{height:10px;}
@@ -60,4 +64,21 @@ body.active:before{height:1000px;  background-color:var(--lt-blue); position: ab
 @keyframes sharkChase{
     0%{ bottom:-350px;}
     100%{ bottom:500px;}
+}
+
+@keyframes wordReveal{
+    0%{opacity: 0;}
+    10%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+@keyframes cardShimmy{
+    0%{transform: skew(0deg, 0deg);}
+    2%{transform: skew(0deg, 1deg);}
+    6%{transform: skew(1deg, 0deg); }
+    10%{transform: skew(0deg, 1deg); }
+    14%{transform: skew(1deg, 0deg);}
+    16%{transform: skew(0deg, 0deg); top:0}
+    25%{top:-400px;}
+    100%{top:-400px; z-index: -1;}
 }
