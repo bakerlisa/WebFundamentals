@@ -1,4 +1,4 @@
-![](https://github.com/lisabroadhead/lisabroadhead/blob/main/lisa.png)
+![](https://github.com/lisabroadhead/dojo/blob/main/CSS/octoCat/octoCat.png)
 
 # READ ME!
 
