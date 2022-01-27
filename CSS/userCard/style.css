@@ -1,0 +1,27 @@
+:root{
+    --white:#ffffff;
+    --black:#000000;
+    --blue:#14A2B8;
+        --dk-blue:#175C97;
+    --gray:#CCCCCC;
+}
+
+body{margin: 0 25px;}
+/* GLOBAL */
+*{padding: 0;margin: 0; font-family: 'Open Sans', sans-serif;box-sizing: border-box}
+
+/* CARD */
+#card{max-width:700px; width:100%; margin:25px auto 0 auto; padding: 25px; border:solid 3px var(--gray); position: relative; display: flex;flex-wrap: wrap; flex-direction: column;}
+    #card:before{content:''; height:75px; width: 100%; position: absolute; top: 0; left: 0; background-color:var(--blue);}
+
+
+/* icon-wrp */
+.icon-wrp{width: 125px; position: relative; z-index: 10; padding-right: 25px;}
+    .icon-wrp:before{content:''; height:100%; width: 100%; border:solid 5px var(--gray); display: block; position: absolute; top: -5px; left: -5px; border-radius: 50%; height: 100px; width: 100px;}
+.icon-wrp img{max-width:100%; display: block;}
+
+/* info-wrp */
+.info-wrp{position: relative;z-index: 10; width:100%; }
+.info-wrp .txt-icn{display: flex; margin: 10px 0 20px 0;}
+.txt-icn .icon{max-height:20px; margin-right:10px;}
+.info-wrp .edit{color:var(--dk-blue); text-decoration: underline; margin-bottom: 0;}
