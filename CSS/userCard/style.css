@@ -4,6 +4,9 @@
     --blue:#14A2B8;
         --dk-blue:#175C97;
     --gray:#CCCCCC;
+
+    --gold:#9F8B71;
+    --lt-blue:#60C0FE;
 }
 
 body{margin: 0 25px;}
@@ -14,14 +17,47 @@ body{margin: 0 25px;}
 #card{max-width:700px; width:100%; margin:25px auto 0 auto; padding: 25px; border:solid 3px var(--gray); position: relative; display: flex;flex-wrap: wrap; flex-direction: column;}
     #card:before{content:''; height:75px; width: 100%; position: absolute; top: 0; left: 0; background-color:var(--blue);}
 
-
 /* icon-wrp */
 .icon-wrp{width: 125px; position: relative; z-index: 10; padding-right: 25px;}
     .icon-wrp:before{content:''; height:100%; width: 100%; border:solid 5px var(--gray); display: block; position: absolute; top: -5px; left: -5px; border-radius: 50%; height: 100px; width: 100px;}
-.icon-wrp img{max-width:100%; display: block;}
+.icon-wrp img{max-width:100%; display: block; border-radius:50px;}
 
 /* info-wrp */
 .info-wrp{position: relative;z-index: 10; width:100%; }
 .info-wrp .txt-icn{display: flex; margin: 10px 0 20px 0;}
-.txt-icn .icon{max-height:20px; margin-right:10px;}
-.info-wrp .edit{color:var(--dk-blue); text-decoration: underline; margin-bottom: 0;}
+.txt-icn .icon{max-height:20px; margin-right:10px; position: relative;}
+    .txt-icn.edit img{position: absolute; left:0}
+.info-wrp .edit{color:var(--dk-blue); text-decoration: underline; margin-bottom: 0; position: relative;}
+    .info-wrp .edit:before{content:'edit profile'; padding-right:10px; padding-left: 30px;}
+    .info-wrp .edit:hover:before{content:'getting closer'; cursor: pointer;}
+    .active .info-wrp .edit{text-decoration: none;}
+    .active .info-wrp .edit:before, .active .info-wrp .edit:hover:before{content:'You Found the Master of Shadows. What is your request?'; color:black}
+
+
+/* Master of Shadow */
+#card .active{border-color:var(--gold);}
+#card .active:before{background-color:var(--black);}
+#card .active .icon-wrp:before{border-color:var(--gold);}
+
+
+/* shark */
+body:before{content:'';  height:10px; width: 100%;}
+body.active:before{height:1000px;  background-color:var(--lt-blue); position: absolute; bottom:0; left: 0; animation: waterRise 5s ease-in;}
+
+.chomp{display: none; transform:rotate(90deg); position: absolute; bottom:-350px; left: 0;right: 0; margin:0 auto;}
+.active .chomp{ display: block; bottom:800px;  animation: sharkChase 5s ease-in 1s;}
+
+/* speech */
+.speech-bubble{position: absolute; top: -150px; left: -225px; height:150px; text-align: center;}
+.speech-bubble
+.speech-bubble .speech{width:auto; transform: scale(-1, 1); height:150px;  display: block;}
+
+@keyframes waterRise{
+    0%{height:10px;}
+    100%{height:1000px;}
+}
+
+@keyframes sharkChase{
+    0%{ bottom:-350px;}
+    100%{ bottom:500px;}
+}

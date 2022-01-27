@@ -11,18 +11,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="card">
         <div class="icon-wrp">
             <img src="img/user-circle.png" alt="account icon">
         </div>
         <div class="info-wrp">
+            <div class="speech-bubble">Sharks!<br/> Where's Jack Sparrow? <img src="img/speak.png" alt="speech bubble" class="speech"></div>
             <h1>Jane Doe</h1>
-            <div class="txt-icn"><img src="img/map-marker.png" class="icon" alt="map icon"> Seattle</div>
-            <p>Developer | Engineer | Problem Solver</p>
-            <p>Master  of shadows and the Internet</p>
-            <div class="txt-icn edit" onclick="toggleProfile()"><img src="img/gear.png" class="icon" alt="gear icon"> edit profile</div>
+            <div class="txt-icn"><img src="img/map-marker.png" class="icon" alt="map icon"> <span class="location">Seattle</span></div>
+            <p class="skills">Developer | Engineer | Problem Solver</p>
+            <p class="intro">Master  of shadows and the Internet</p>
+            <div class="txt-icn edit" onclick="toggleProfile()"><img src="img/gear.png" class="icon" alt="gear icon"></div>
         </div>
     </div>
+    <img src="img/chop.gif" alt="image of a chomping shark" class="chomp">
 </body>
+<script src="script.js"></script>
 </html>
