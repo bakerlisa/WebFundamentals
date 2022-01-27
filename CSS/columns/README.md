@@ -2,4 +2,4 @@
 
 # An exercise in flex box and columns
 
-But wait there's more! Can you find the hidden "Lisa Mood Meters"?!
+But wait there's more! Can you trigger the hidden "Mood Meters"?!
