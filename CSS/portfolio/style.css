@@ -38,6 +38,7 @@ nav .button{background-color:var(--blue); color:var(--white); border:none; borde
 
     /* info-wrp */
     .info-wrp{position: relative;z-index: 10; width:100%; }
+    .info-wrp h1{padding-top: 10px;}
     .info-wrp .txt-icn{display: flex; margin: 10px 0 20px 0;}
     .txt-icn .icon{max-height:20px; margin-right:10px; position: relative;}
         .txt-icn.edit img{position: absolute; left:0}
