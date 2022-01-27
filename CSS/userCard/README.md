@@ -1,4 +1,5 @@
 ![](https://github.com/lisabroadhead/dojo/blob/main/CSS/userCard/userCard.png)
+![](https://github.com/lisabroadhead/dojo/blob/main/CSS/userCard/userCard.png)
 
 # User Card
 
