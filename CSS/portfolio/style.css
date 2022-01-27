@@ -59,7 +59,7 @@ nav .button{background-color:var(--blue); color:var(--white); border:none; borde
 
 aside h2{background-color:var(--blackish); color:white; padding: 25px; margin-bottom: 15px;}
 aside img{max-height:25px;}
-aside .indv-info{display: flex; padding:0 15px 15px; align-content: center; width: 100%; justify-content: space-around;}
+aside .indv-info{display: flex; flex-wrap: wrap; padding:0 15px 15px; align-content: center; width: 100%; justify-content: space-around;}
 aside .indv-info .name{padding:0 10px; justify-self: start; width: 70%;}
 aside .indv-info .yn{font-size:25px;}
 aside .indv-info i{margin-left: 5px; color:var(--gray);}
@@ -70,4 +70,21 @@ aside .num{background-color:var(--gray); border-radius:50%; color:var(--black); 
 
 
 /* MEDIA QUERIES */
-.content-container{flex-direction: column; }
+
+@media all and (max-width:1000px){
+    .content-container{flex-direction: column; }
+    main{width: 100%; padding-right: 0;}
+    aside{width: 100%; margin-bottom: 25px;}
+    nav .button{position: absolute; top: 25px; right: 25px; width:100px;}
+}
+
+@media all and (max-width:600px){
+    .logo-nav ul{width: 100%;padding-left: 0; padding-top: 15px;}
+    .logo-nav li{text-align: center; padding: 0 5px;}
+}
+
+@media all and (max-width:550px){
+    aside h2{font-size:18px}
+    aside .indv-info .name{width: calc(100% - 25px);}
+    aside .indv-info .yn{width: 100%; margin-top: 10px; margin-left: 25px;}
+}
