@@ -1,0 +1,29 @@
+/* I Feel like this needs more, but here you are! */
+
+/* CSS reset */
+* { margin: 25px; padding: 0; box-sizing: border-box;}
+      
+/* Fixed width container class that will "auto-center" itself */
+.container{width: 1200px; margin: 0 auto;}
+
+/* row / columns */
+.row{display: flex; gap:10px; margin-bottom: 10px; justify-content: center;align-items: center;}
+.col{width: 25%; background-color: #400101; border-radius:10px; padding:25px; color:#D96704; overflow: hidden;}
+
+/* button */
+.button{display: block; font-family: 'Roboto', sans-serif; text-decoration: none; text-align: center;} 
+.button:hover{cursor: pointer;}
+
+.button.three{margin-top: 25px; background-color: #2B77E4; color:white; width: 200px; padding: 15px; font-weight:300; border:solid 5px black; box-shadow: 5px 5px 0px 0px rgba(0,0,0,1); transition:all .20s ease-in;}
+  .button.three:hover {color:#2B77E4; background-color: transparent; transition:all .20s ease-in;}
+
+/* NavBar */
+.nav{background-color: #333333; padding: 25px; color:white}
+
+/* IMAGE HOVER STYLES */
+.block > img{display: block; position: relative; z-index: 10; transform: rotateY(0deg); transition: all .25s ease-in;}
+.block:hover > img{opacity: 0; transform: rotateY(90deg); transition: all .25s ease-in;}
+
+.block > p{font-family: 'Comfortaa', cursive; color:#7DCEDA; position: absolute; top: 50%; transform: translateY(-50%); left: 0;right: 0; text-align: center;opacity: 0; z-index: 1; transition: all .25s ease-in;}
+.block:hover > p{opacity: 1; transition: all .25s ease-in;}
+      

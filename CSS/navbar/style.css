@@ -28,7 +28,6 @@
 @media all and (max-width:600px){
     .nav{flex-wrap:wrap; flex-direction:column; width: 100%;}
         .nav-links li:last-child{position: absolute;top: 20px; right: -0px;}
-
 }
 
 
