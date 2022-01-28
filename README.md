@@ -2,4 +2,4 @@
 
 https://lisabroadhead.github.io/dojo/
 
-Hidden elements in each project! Open them and find out!
+Not everything is what meets the eye! Open them in the broswer to find them
