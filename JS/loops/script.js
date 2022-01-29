@@ -5,7 +5,7 @@ function printOdds(num){
        }
     }
 }
-// printOdds(20);
+printOdds(20);
 
 function decreaseThree(num){
     // for(i=0; i < 100; i++){
@@ -22,14 +22,14 @@ function decreaseThree(num){
         i++;
     }
 }
-// decreaseThree(100);
+decreaseThree(100);
 
 function sequence(arr){
     for(i=0;i < arr.length -1; i++){
         console.log(arr[i]);
     }
 }
-// sequence([4, 2.5, 1, -0.5, -2, -3.5]);
+sequence([4, 2.5, 1, -0.5, -2, -3.5]);
 
 function sigma(){
     var stringSum = "";
@@ -41,7 +41,7 @@ function sigma(){
     console.log(sum);
     console.log(stringSum);
 }
-// sigma();
+sigma();
 
 function factional(){
     var product = 1;
