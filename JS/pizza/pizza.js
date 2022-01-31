@@ -1,8 +1,10 @@
+// random number generator built on the numbers its given when the function is called. In this case it's 0 and the length of our multi-dimensional array
 function randomPizza(min, max) {
     var pizNum = Math.round(Math.random() * (max - min) + min);
     return pizNum;
   }
 
+// pizza object
 function pizzaOven(type,sauce,cheese,meat,toppings){
     var pizza = {};
         pizza.type = type;
@@ -13,11 +15,17 @@ function pizzaOven(type,sauce,cheese,meat,toppings){
     return pizza;
 }
 
-var pizza1 = pizzaOven("deep dish","traditional",["mozzarella"],["pepperoni","sausage"]);
-var pizza2 = pizzaOven("hand tossed","marinara",["mozzarella", "feta"],null,["mushrooms","olives","onions"]);
-var pizza3 = pizzaOven("stuffed crust","red sauce",["extra mozzarella"],"bacon",["ham","pineapple"]);
-var pizza4 = pizzaOven("cracker crust (nasty)","white","chicken","feta","spinach");
+// created a multi-dimensional array because I wanted it to be scalable.  
+var pizzas = [
+    ["deep dish","traditional",["mozzarella"],["pepperoni","sausage"],null],
+    ["hand tossed","marinara",["mozzarella", "feta"],null,["mushrooms","olives","onions"]],
+    ["stuffed crust","red sauce",["extra mozzarella"],"bacon",["ham","pineapple"]],
+    ["cracker crust (nasty)","white (nasty)","chicken (why?)","feta (grose)","spinach (really?)"]
+];
 
-var pizzas = [pizza1,pizza2,pizza3,pizza4];
+// Picks a random number on numbers between 0 and the array length. This makes it scalable. I don’t have to do anything but add more pizzas and all the code will update with me. Put it ina var because its more readable when I call the object. And if I want to update anything I only have to do it here
+var ranPizza = randomPizza(0,(pizzas.length-1));
 
-console.log(pizzas[randomPizza(1,4)]);
+//runs the object, with the random pizza num 
+console.log(pizzaOven(pizzas[ranPizza][0],pizzas[ranPizza][1],pizzas[ranPizza][2],pizzas[ranPizza][3],pizzas[ranPizza][4]));
+
