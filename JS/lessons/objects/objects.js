@@ -12,6 +12,8 @@ console.log(something.favnum);
 
 // Array: changes all the time, and they come in the same order every time
 // object: easier and orde is not important
-document.querySelector(".box").
 
 
+function buttonClick(){
+    alert("hello World");
+}
