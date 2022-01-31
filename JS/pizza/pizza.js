@@ -1,14 +1,14 @@
 // random number generator built on the numbers its given when the function is called. In this case it's 0 and the length of our multi-dimensional array
 //Also added the math.round because I wanted a whole number
 function randomPizza(max, min) {
-    var pizNum = Math.floor(Math.random() * (max - min) + min);
+    var pizNum = Math.floor(Math.random() * max);
     return pizNum;
   }
 
 // pizza object
-function pizzaOven(type,sauce,cheese,meat,toppings){
+function pizzaOven(crust,sauce,cheese,meat,toppings){
     var pizza = {};
-        pizza.type = type;
+        pizza.crust = crust;
         pizza.sauce = sauce;
         pizza.meat = meat;
         pizza.cheese = cheese;
@@ -16,18 +16,27 @@ function pizzaOven(type,sauce,cheese,meat,toppings){
     return pizza;
 }
 
-// created a multi-dimensional array because I wanted it to be scalable.  
+// placed objects in an array to save orders, but the object is still doing a majority of the heavy lifintand I can access values by their object name: pizzas[0].crust   
+
 var pizzas = [
-    ["deep dish","traditional",["mozzarella"],["pepperoni","sausage"],null],
-    ["hand tossed","marinara",["mozzarella", "feta"],null,["mushrooms","olives","onions"]],
-    ["stuffed crust","red sauce",["extra mozzarella"],"bacon",["ham","pineapple"]],
-    ["cracker crust (nasty)","white (nasty)","chicken (why?)","feta (grose)","spinach (really?)"]
+    pizzaOven("cheese stuffed","marinara","american","pepperoni","[jalapenos,banana pepers,green pepers]"),
+    pizzaOven("deep dish","traditional",["mozzarella"],["pepperoni","sausage"],null),
+    pizzaOven("hand tossed","marinara",["mozzarella", "feta"],null,["mushrooms","olives","onions"]),
+    pizzaOven("stuffed crust","red sauce",["extra mozzarella"],"bacon",["ham","pineapple"]),
+    pizzaOven("cracker crust (nasty)","white (nasty)","chicken (why?)","feta (grose)","spinach (really?)"),
 ];
 
-// Picks a random number on numbers between 0 and the array length. This makes it scalable. I don’t have to do anything but add more pizzas and all the code will update with me. Put it ina var because its more readable when I call the object. And if I want to update anything I only have to do it here
-//don't minus one here - because I'll minus one in the randomPizza function
-var ranPizza = randomPizza((pizzas.length),0);
+pizzas.push(pizzaOven("Double Fluffy Crust","double marinara",["pepperoni","sausage","bacon"],"double cheese",null));
 
-//runs the object, with the random pizza num 
-console.log(pizzaOven(pizzas[ranPizza][0],pizzas[ranPizza][1],pizzas[ranPizza][2],pizzas[ranPizza][3],pizzas[ranPizza][4]));
+// Random num 0 and array.length ++pizza, pizzas.length incereases automatically by 1
+var ranPizza = randomPizza((pizzas.length));
+// console.log(pizzas.length);
+
+console.log(pizzas[ranPizza]);
+
+
+
+
+
+
 
