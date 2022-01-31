@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <div class="container-wrp">
@@ -16,7 +17,7 @@
             <h1>Dojonary</h1>
             <form action="#" class="log">
                 <input type="text" name="login" id="login" class="login-input" placeholder="Search">
-                <input type="submit" class="submit" value="Login">
+                <input type="submit" class="submit" value="Login" onclick="logStatus(event)">
             </form>
         </div>
         <main>
@@ -24,7 +25,7 @@
                 <div class="word-elements">
                     <h2>Ninja <span>noun</span></h2>
                     <div class="pluarl">Plural: <em>ninjas</em></div>
-                    <button class="button likes"><span>12</span> Likes</button>
+                    <button class="button likes" onclick="like(event)"><span class="num">12</span> Likes</button>
                 </div>
                 <p class="definition">A practicer skilled in the <a href="https://en.wikipedia.org/wiki/Japanese_language" target="_blank">Japanese</a> art of <a href="https://www.google.com/search?q=ninjustu&oq=ninjustu&aqs=chrome..69i57j0i10i433j0i10i131i433j0i10l3j0i10i457j0i10l3.189j0j4&sourceid=chrome&ie=UTF-8" target="blank">ninjustu</a></p>
             </div>
@@ -32,18 +33,19 @@
                 <div class="word-elements">
                     <h2>Ninja <span>noun</span></h2>
                     <div class="pluarl">Plural: <em>ninjas</em></div>
-                    <button class="button likes"><span>12</span> Likes</button>
+                    <button class="button likes" onclick="like(event)"><span class="num">37</span> Likes</button>
                 </div>
-                <p>A <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank">programmer</a> who breaks down and problems solves with <a href="https://en.wikipedia.org/wiki/Zen" targt="_blank">zen</a>-like focus</p>
+                <p class="definition">A <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank">programmer</a> who breaks down and problems solves with <a href="https://en.wikipedia.org/wiki/Zen" targt="_blank">zen</a>-like focus</p>
             </div>
         </main>
         <aside>
             <div class="def-defined">
                 <h3>Dojonary is defined by  <strong> You</strong></h3>
-                <button class="button">Add Definition</button>
+                <button class="button" onclick="removeElement(event)">Add Definition</button>
             </div>
         </aside>
     </div>
+    
     <script src="script.js"></script>    
 </body>
 </html>

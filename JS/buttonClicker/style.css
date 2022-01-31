@@ -27,18 +27,25 @@ button,input.submit{border: solid 2px var(--black); transition: all .25s ease-in
 .login-wrp h1{width: 200px;}
 .login-wrp form{width: calc(100% - 200px); display: flex; align-items: center; justify-content: space-around;}
 .login-wrp .login-input{border:solid 2px var(--black); padding: 10px; width: 400px; margin-right: 25px; max-width: 100%;}
-.login-wrp .submit{border:solid 2px var(--black); background-color:var(--blue); padding: 10px 25px; color:var(--white);}
+.login-wrp .submit{border:solid 2px var(--black); background-color:var(--blue); padding: 10px 25px; color:var(--white); width: 100px; text-align: center;}
 
 /* MAIN */
 main .def-block{margin-bottom:  25px; border:solid 2px var(--black); padding: 25px; display: flex;align-items: center;justify-self: ;}
 main .word-elements{width: 200px; text-align: center; padding-right: 50px;}
 main .word-elements h2{display: inline-block;}
 main .word-elements h2 > span{text-align: center; display: block;font-size:14px; font-weight:100; font-style: italic; padding: 5px 0;}
-main .word-elements .button{display: block;background-color:var(--yellow); margin-top: 25px; width: 100%; padding: 10px;}
+main .word-elements .button{display: block;background-color:var(--yellow); margin-top: 25px; width: 100%; padding: 10px; position: relative;}
+    main .word-elements .button .fa-thumbs-up{position: absolute; font-size: 40px; left: 10px; opacity: 0; top:-5px;  transform: scale(.5); animation: popFade .9s ease-in;}
+    @keyframes popFade{
+        0%{opacity: 1; transform: scale(1);}
+        25%{opacity: 1; transform: scale(1.1);}
+        100%{opacity: 0; transform: scale(.75);}
+    }
 
 /* ASIDE */
 aside .def-defined{border:solid 2px var(--black); padding: 25px;}
-aside .button{background-color:var(--green); padding: 15px; width: 100%; margin-top: 25px; max-width: 200px;}
+aside .button{background-color:var(--green); padding: 15px; width: 100%; margin-top: 25px; max-width: 200px; max-height:50px;}
+aside .button.hide{border:none; max-height:0;  margin-top: 0;padding-top:0; padding-bottom:0; overflow: hidden; transition: all .25s ease-in;}  
 
 /* MEDIA QUERIES */
     @media all and (min-width:1001px){
@@ -55,5 +62,8 @@ aside .button{background-color:var(--green); padding: 15px; width: 100%; margin-
         .login-wrp{flex-direction: column;}
         .login-wrp h1,.login-wrp form{width: 100%;}
         .login-wrp h1{text-align: center; margin-bottom: 10px;}
+        main .def-block{flex-direction:column;}
+        main .word-elements{padding-right: 0;}
+        main .def-block .definition{margin-top: 25px; text-align: center;}
     }
 
