@@ -5,35 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoLab</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>VideoLav</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
 
-    <!-- top navigation -->
-    <div class="top">
-        <div class="nav-container">
-            <h1>VideoLab</h1>
-            <input type="text" placeholder="Search" name="query" class="search">
-            <button class="btn">Login</button>
-        </div>
-    </div>
-
     <!-- main content -->
     <div class="flex-container">
+        <!-- top navigation -->
+        <div class="top">
+            <h1>VideoLab</h1>
+            <form action="#" class="log">
+                <input type="text" placeholder="Search" name="query" class="login-input">
+                <button class="btn submit">Login</button>
+            </form>
+        </div>
 
         <!-- left column -->
-        <div class="col-l">
+        <main class="col-l">
 
             <!-- this is a placeholder replace it with a real video -->
-            <figure class="placeholder">
-                <svg style="text-anchor:middle;" width="720" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                    <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
-                </svg>
-            </figure>
+            <video width="720px" height="400px"  muted="muted"  onmouseover="videoPlay(event)" onmouseout="videoStop(event)">
+                <source src="assets/mountains.mp4" type="video/mp4">
+                <source src="assets/mountains.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
 
             <!-- video info -->
             <div class="row">
@@ -41,17 +41,17 @@
                     <h1>Example Video Title</h1>
                     <h3>1.3K Views | June, 18, 2021</h3>
                     <div class="user">
-                        <img src="assets/user.png" alt="user-circle" class="avatar-s">
+                        <img src="img/user.png" alt="user-circle" class="avatar-s">
                         <span class="user-name">Example User Name</span>
                     </div>
                 </div>
                 <button class="btn">Subscribe</button>
             </div>
 
-        </div>
+        </main>
 
         <!-- right column -->
-        <div class="col-r">
+        <aside class="col-r">
 
             <h3 class="sub-header">Up Next</h3>
 
@@ -75,7 +75,7 @@
                 <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
             </div>
 
-        </div>
+        </aside>
 
     </div>
 

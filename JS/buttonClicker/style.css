@@ -47,6 +47,8 @@ aside .def-defined{border:solid 2px var(--black); padding: 25px;}
 aside .button{background-color:var(--green); padding: 15px; width: 100%; margin-top: 25px; max-width: 200px; max-height:50px;}
 aside .button.hide{border:none; max-height:0;  margin-top: 0;padding-top:0; padding-bottom:0; overflow: hidden; transition: all .25s ease-in;}  
 
+
+
 /* MEDIA QUERIES */
     @media all and (min-width:1001px){
         main{width: calc(100% - 300px); max-width:100%; padding-right: 25px;}
