@@ -1,5 +1,4 @@
-// random number generator built on the numbers its given when the function is called. In this case it's 0 and the length of our multi-dimensional array
-//Also added the math.round because I wanted a whole number
+// random number generator from 0 and the length of array
 function randomPizza(max, min) {
     var pizNum = Math.floor(Math.random() * max);
     return pizNum;
@@ -16,8 +15,7 @@ function pizzaOven(crust,sauce,cheese,meat,toppings){
     return pizza;
 }
 
-// placed objects in an array to save orders, but the object is still doing a majority of the heavy lifintand I can access values by their object name: pizzas[0].crust   
-
+// placed objects a "starage" array, but the object is still doing a majority of the heavy lifing and I can access values by their object name: pizzas[0].crust   
 var pizzas = [
     pizzaOven("cheese stuffed","marinara","american","pepperoni","[jalapenos,banana pepers,green pepers]"),
     pizzaOven("deep dish","traditional",["mozzarella"],["pepperoni","sausage"],null),
@@ -25,12 +23,11 @@ var pizzas = [
     pizzaOven("stuffed crust","red sauce",["extra mozzarella"],"bacon",["ham","pineapple"]),
     pizzaOven("cracker crust (nasty)","white (nasty)","chicken (why?)","feta (grose)","spinach (really?)"),
 ];
-
+//push a new pizza order to the "storage" array (array I'm using for storing orders)
 pizzas.push(pizzaOven("Double Fluffy Crust","double marinara",["pepperoni","sausage","bacon"],"double cheese",null));
 
-// Random num 0 and array.length ++pizza, pizzas.length incereases automatically by 1
+// Random num 0 and array.length  if ++pizza, pizzas.length automatically  ++1
 var ranPizza = randomPizza((pizzas.length));
-// console.log(pizzas.length);
 
 console.log(pizzas[ranPizza]);
 
