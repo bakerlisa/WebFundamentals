@@ -1,4 +1,5 @@
 // random number generator built on the numbers its given when the function is called. In this case it's 0 and the length of our multi-dimensional array
+//Also added the math.round because I wanted a whole number
 function randomPizza(min, max) {
     var pizNum = Math.round(Math.random() * (max - min) + min);
     return pizNum;
