@@ -1,0 +1,10 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --purple:#9900FF;
+}
+
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+.container-wrapper{max-width:1000px; margin: 0 auto;}
+
