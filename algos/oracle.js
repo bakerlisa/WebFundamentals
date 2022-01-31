@@ -21,5 +21,7 @@ var lifesAnswers = [
     "Very doubtful."
 ];
 
-var ranNum = Math.floor((Math.random() * (lifesAnswers.length - 1) + 0));
+var ranNum = Math.floor(Math.random() * (lifesAnswers.length));
 console.log(lifesAnswers[ranNum]);
+console.log("ranNum: " + ranNum);
+console.log("lifesAnswers.length: " + lifesAnswers.length);
