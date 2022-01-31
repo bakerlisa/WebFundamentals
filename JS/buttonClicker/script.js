@@ -25,4 +25,6 @@ function like(e){
     var likeElement = e.target.querySelector('.num');
     var likeNumber = parseInt(likeElement.innerHTML)+ 1;
     likeElement.innerHTML = likeNumber;
+
+    // alert("Horray you have a like!");
 }
