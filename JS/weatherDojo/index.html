@@ -28,7 +28,7 @@
             <h1>San Jose</h1>
             <div class="show-temp flex">
                 <p>show temperature in </p>
-                <select>
+                <select onchange="temp(this.value)">
                     <option value="c">°C</option>
                     <option value="f">°F</option>
                 </select>
@@ -41,8 +41,8 @@
                 <img src="img/some_rain.png" alt="image of clouds with some rain">
                 <p class="cast">some rain</p>
                 <div class="high-low flex">
-                    <p class="high">24°</p>
-                    <p class="low">18°</p>
+                    <p class="high"><span class="temp">24</span>°</p>
+                    <p class="low"><span class="temp">18</span>°</p>
                 </div>
             </div>
             <div class="forecaset">
@@ -50,8 +50,8 @@
                 <img src="img/some_sun.png" alt="image of a sunny representing sunny sky">
                 <p class="cast">some sun</p>
                 <div class="high-low flex">
-                    <p class="high">27°</p>
-                    <p class="low">19°</p>
+                    <p class="high"><span class="temp">27</span>°</p>
+                    <p class="low"><span class="temp">19</span>°</p>
                 </div>
             </div>
             <div class="forecaset">
@@ -59,8 +59,8 @@
                 <img src="img/some_clouds.png" alt="image of clouds to represent cloudy day">
                 <p class="cast">some clouds</p>
                 <div class="high-low flex">
-                    <p class="high">21°</p>
-                    <p class="low">16°</p>
+                    <p class="high"><span class="temp">21</span>°</p>
+                    <p class="low"><span class="temp">16</span>°</p>
                 </div>
             </div>
             <div class="forecaset">
@@ -68,8 +68,8 @@
                 <img src="img/some_sun.png" alt="image of a sun representing a sunny day">
                 <p class="cast">some sun</p>
                 <div class="high-low flex">
-                    <p class="high">26°</p>
-                    <p class="low">21°</p>
+                    <p class="high"><span class="temp">26</span>°</p>
+                    <p class="low"><span class="temp">21</span>°</p>
                 </div>
             </div>   
         </div>
