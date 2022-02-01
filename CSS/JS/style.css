@@ -1,0 +1,91 @@
+/* GLOBAL */
+:root{
+    --white:#ffffff;
+    --black:#000000;
+        --blackish:#525252;
+    --blue:#14A2B8;
+        --dk-blue:#175C97;
+    --gray:#CCCCCC;
+        --dk-gray:#858585;
+
+    --gold:#9F8B71;
+    --lt-blue:#60C0FE;
+}
+
+*{font-family: 'Roboto', sans-serif; padding: 0; margin: 0; box-sizing: border-box}
+.content-container{max-width:100%; width: 1200px; margin:0 auto; display: flex; padding: 0 25px;}
+main{width: 65%; padding-right:50px}
+aside{width: 35%;}
+
+/* NAV */
+nav{width: 100%; background-color:var(--black);}
+nav .content-container{display: flex; flex-wrap:wrap;  justify-content: space-between; padding: 20px;}
+nav .logo-nav{display: flex; flex-wrap: wrap; align-items: center;justify-content: start;}
+.logo-nav p{color:var(--white); font-weight:900; font-size:35px;}
+.logo-nav ul{padding: 0 0 0 25px; margin: 0; display: flex;}
+.logo-nav li{list-style-type: none; color:var(--white); padding: 0 10px 0; opacity: 0.75;}
+    .logo-nav li.active{opacity: 1;}
+nav .button{background-color:var(--blue); color:var(--white); border:none; border-radius:2px; padding:10px 20px;}
+
+/* USERCARD */
+#card{margin:25px auto 0 auto; padding: 25px; border:solid 3px var(--gray); position: relative; display: flex;flex-wrap: wrap; flex-direction: column;}
+    #card:before{content:''; height:75px; width: 100%; position: absolute; top: 0; left: 0; background-color:var(--blue); }
+
+    /* icon-wrp */
+    .icon-wrp{width: 125px; position: relative; z-index: 10; padding-right: 25px;}
+        .icon-wrp:before{content:''; height:100%; width: 100%; border:solid 5px var(--gray); display: block; position: absolute; top: -5px; left: -5px; border-radius: 50%; height: 100px; width: 100px;}
+    .icon-wrp img{max-width:100%; display: block; border-radius:50px;}
+
+    /* info-wrp */
+    .info-wrp{position: relative;z-index: 10; width:100%; }
+    .info-wrp h1{padding-top: 10px;}
+    .info-wrp .txt-icn{display: flex; margin: 10px 0 20px 0;}
+    .txt-icn .icon{max-height:20px; margin-right:10px; position: relative;}
+        .txt-icn.edit img{position: absolute; left:0}
+    .info-wrp .edit{color:var(--dk-blue); text-decoration: underline; margin-bottom: 0; position: relative;}
+        .info-wrp .edit:before{content:'edit profile'; padding-right:10px; padding-left: 30px;}
+        .info-wrp .edit:hover:before{content:'getting closer'; cursor: pointer;}
+
+/* EDUCATION */
+#edu-wrp{margin-top: 25px; position: relative; border:solid 3px var(--gray);}
+#edu-wrp h2{width: 100%; padding: 25px;  margin-bottom: 25px; background-color:var(--blackish); color:var(--white); display: block;}
+#edu-wrp h3, #edu-wrp p{padding-left:25px; padding-right: 25px;}
+#edu-wrp .date{color:var(--dk-gray); font-size:14px; padding-bottom: 10px;}
+#edu-wrp .info{margin-bottom: 25px;}
+
+
+/* SIDEBAR */
+.connections-requestions,
+.connection-wrp{margin-top: 25px; border:solid 3px var(--gray);}
+
+aside h2{background-color:var(--blackish); color:white; padding: 25px; margin-bottom: 15px;}
+aside img{max-height:25px;}
+aside .indv-info{display: flex; flex-wrap: wrap; padding:0 15px 15px; align-content: center; width: 100%; justify-content: space-around;}
+aside .indv-info .name{padding:0 10px; justify-self: start; width: 70%;}
+aside .indv-info .yn{font-size:25px;}
+aside .indv-info i{margin-left: 5px; color:var(--gray);}
+aside .num{background-color:var(--gray); border-radius:50%; color:var(--black); padding:5px 10px;}
+
+.connection-wrp .indv-info .name{width: calc(100% - 25px);}
+.connection-wrp .view{padding:15px 25px; border-top:solid 3px var(--gray); display: block; color:var(--blue);}
+
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:1000px){
+    .content-container{flex-direction: column; }
+    main{width: 100%; padding-right: 0;}
+    aside{width: 100%; margin-bottom: 25px;}
+    nav .button{position: absolute; top: 25px; right: 25px; width:100px;}
+}
+
+@media all and (max-width:600px){
+    .logo-nav ul{width: 100%;padding-left: 0; padding-top: 15px;}
+    .logo-nav li{text-align: center; padding: 0 5px;}
+}
+
+@media all and (max-width:550px){
+    aside h2{font-size:18px}
+    aside .indv-info .name{width: calc(100% - 25px);}
+    aside .indv-info .yn{width: 100%; margin-top: 10px; margin-left: 25px;}
+}
