@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/user-circle.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="content-container">
+            <div class="logo-nav">
+                <p>Profile</p>
+                <ul>
+                    <li>Home</li>
+                    <li class="active">My Profile</li>
+                    <li>Find Connections</li>
+                </ul>
+            </div>
+            <button class="button" href="#">Sign Out</button>
+        </div>
+    </div>
+    </nav>
+
+    <div class="content-container">
+        <main>
+            <div id="card">
+                <div class="icon-wrp">
+                    <img src="img/user-circle.png" alt="account icon">
+                </div>
+                <div class="info-wrp"> 
+                    <h1>Jane Doe</h1>
+                    <div class="txt-icn"><img src="img/map-marker.png" class="icon" alt="map icon"> <span class="location">Seattle</span></div>
+                    <p class="skills">Developer | Engineer | Problem Solver</p>
+                    <p class="intro">Master  of shadows and the Internet</p>
+                    <div class="txt-icn edit" onclick="changeName(event)"><img src="img/gear.png" class="icon" alt="gear icon"></div>
+                </div>
+            </div>
+
+            <div id="edu-wrp">
+                <h2>Education</h2>    
+                <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                <p class="date">Dec. 2019 - Mar 2020</p>
+                <p class="info">Triple blet belt in Python, MERN, and C#...</p>
+            </div>
+        </main>
+        <aside>
+            <div class="connections-requestions">
+                <h2><span class="num">2</span> Connection Requests</h2>
+                <div class="indv-info">
+                    <img src="img/user-circle.png" alt="icon person">
+                    <p class="name">Emily Eights</p>  
+                    <span class="yn"><i class="fas fa-check-circle" onclick="removeElement(event,true)"></i><i class="fas fa-times-circle" onclick="removeElement(event)"></i></span>
+                </div>
+                <div class="indv-info" >
+                    <img src="img/user-circle.png" alt="icon person">
+                    <p class="name">Toms SoDah</p>  
+                    <span class="yn"><i class="fas fa-check-circle" onclick="removeElement(event,true)"></i><i class="fas fa-times-circle" onclick="removeElement(event)"></i></span>
+                </div>
+            </div>
+            
+            <div class="connection-wrp">
+                <h2>
+                    <span class="num-wrp">
+                        <span class="num">500</span><span>+</span>
+                    </span> 
+                Your Connections</h2>
+                <div class="indv-info">
+                    <img src="img/user-circle.png" alt="icon person">
+                    <p class="name">Eager Beavers</p>  
+                </div>
+                <div class="indv-info">
+                    <img src="img/user-circle.png" alt="icon person">
+                    <p class="name">Eat Eggs </p>  
+                </div>
+                <div class="indv-info">
+                    <img src="img/user-circle.png" alt="icon person">
+                    <p class="name">Poor Breakfast</p>  
+                </div>
+                <div class="indv-info">
+                    <img src="img/user-circle.png" alt="icon person">
+                    <p class="name">Every Morning</p>  
+                </div>
+                <a href="#" class="view" onclick="viewBeavers()">View More</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+</html>
