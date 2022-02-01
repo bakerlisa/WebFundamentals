@@ -1,3 +1,5 @@
-![](https://github.com/lisabroadhead/dojo/blob/main/JS/clock/clock.png)
+![](https://github.com/lisabroadhead/dojo/blob/main/JS/clock/newClock.png)
 
-# Ticking Clock - JS, CSS, HTML
+# Ticking Clock
+
+Built using JS, CSS, HTML
