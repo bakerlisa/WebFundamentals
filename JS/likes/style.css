@@ -28,7 +28,7 @@ button,input.submit,.button{border: solid 2px var(--black); transition: all .25s
 /* MAIN */
 main{width: calc(100% - 200px); padding-left: 50px;}
 main .def-block{margin-bottom:  25px; border:solid 2px var(--black); width: 100%; padding: 25px; display: flex;align-items: center;justify-content: center; flex-wrap: wrap;}
-main .word-elements{width: 100%; display: flex;align-items: center;justify-content: space-between; text-align: center; padding-right: 50px;}
+main .word-elements{width: 100%; display: flex;align-items: center;justify-content: space-between; text-align: center; padding-right: 0px;}
 main .word-elements h2{text-align-last: left;}
 main .word-elements > *{width: 33.33%;}
 main .likes{display: flex; justify-content: space-around; align-items: center;}
@@ -43,5 +43,19 @@ main .word-elements .button{display: block;background-color:var(--yellow); paddi
 
 /* ASIDE */
 aside{width: 200px; border:solid 2px var(--black); padding: 25px;}
+aside a{display: block; text-align: center;padding:5px 0;}
 aside img{display: block;margin: 0 auto;}
 
+@media all and (max-width:1000px){
+    main{padding:0 25px;}
+    aside{width:175px; margin-left: 25px; padding-left: 25px;}
+}
+@media all and (max-width:600px){
+    main{width: 100%;}
+    aside{width: 100%; margin:0 25px 25px;}
+    aside h2{text-align: center;}
+}
+@media all and (max-width:480px){
+    main .word-elements{align-items: start; flex-direction: column; text-align: left;}
+    main .word-elements > *{padding: 0 0 10px 0;}
+}
