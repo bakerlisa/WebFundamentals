@@ -5,8 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dojo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    
+    <nav>
+        <div class="container-wrapper flex">
+            <p class="site">DojoWeather</p>
+            <ul class="flex">
+                <li onclick="weatherReport()">Burbank</li>
+                <li onclick="weatherReport()">Chicago</li>
+                <li onclick="weatherReport()">Dallas</li>
+            </ul>
+        </div>    
+    </nav>
+
+    <div class="container-wrapper flex">
+        <div class="title-wrp flex">
+            <h1>San Jose</h1>
+            <div class="show-temp flex">
+                <p>show temperature in </p>
+                <select>
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="forecast-wrp flex">
+            <div class="forecaset">
+                <h2 class="title">Today</h2>
+                <img src="img/some_rain.png" alt="image of clouds with some rain">
+                <p class="cast">some rain</p>
+                <div class="high-low flex">
+                    <p class="high">24°</p>
+                    <p class="low">18°</p>
+                </div>
+            </div>
+            <div class="forecaset">
+                <h2 class="title">Tomorrow</h2>
+                <img src="img/some_sun.png" alt="image of a sunny representing sunny sky">
+                <p class="cast">some sun</p>
+                <div class="high-low flex">
+                    <p class="high">27°</p>
+                    <p class="low">19°</p>
+                </div>
+            </div>
+            <div class="forecaset">
+                <h2 class="title">Friday</h2>
+                <img src="img/some_clouds.png" alt="image of clouds to represent cloudy day">
+                <p class="cast">some clouds</p>
+                <div class="high-low flex">
+                    <p class="high">21°</p>
+                    <p class="low">16°</p>
+                </div>
+            </div>
+            <div class="forecaset">
+                <h2 class="title">Saturday</h2>
+                <img src="img/some_sun.png" alt="image of a sun representing a sunny day">
+                <p class="cast">some sun</p>
+                <div class="high-low flex">
+                    <p class="high">26°</p>
+                    <p class="low">21°</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="cookie-popup container-wrapper flex">
+        <i class="fas fa-cookie-bite"></i>
+        <div class="txt-wrp">
+            <h3 class="title">Stop! Cookie Time!</h3>
+            <p>We Use Cookies! (sadly not the edible kind) to personalize content and ads, to provide social media features and to analyse out traffic  <a href="">Read More...</a></p>
+        </div>
+        <button class="button" href="#" onclick="accept()">I Accept</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
