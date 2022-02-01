@@ -22,7 +22,9 @@ function like(e){
     },3000);
 
     //++1 visual like 
-    var likeElement = document.querySelector('.num');
+    var likeParent = e.target.parentElement;
+    var likeElement = likeParent.querySelector('.num');
+    
     var likeNumber = parseInt(likeElement.innerHTML)+ 1;
     likeElement.innerHTML = likeNumber;
 
