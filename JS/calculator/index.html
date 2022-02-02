@@ -1,4 +1,18 @@
-<div id="calculator">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Calculate This?!</h1>
+  <div id="calculator">
     <div id="display">0</div>
     <div class="row">
       <button onclick="press(7);">7</button>
@@ -19,7 +33,7 @@
       <button class="operator" onclick="setOP('-');">−</button>
     </div>
     <div class="row">
-      <button onclick="clr();">C</button>
+      <button class="clear" onclick="clr();">C</button>
       <button onclick="press(0);">0</button>
       <button onclick="press('.');">.</button>
       <button class="operator" onclick="setOP('+');">+</button>
@@ -28,4 +42,9 @@
       <button id="equals" onclick="calculate()">=</div>
     </div>
   <div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
   
