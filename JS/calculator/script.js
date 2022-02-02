@@ -12,7 +12,6 @@ var display = document.querySelector('#display');
 function press(button){
     // operatorArray empty, add to val calcArr1
     if(operatorArray.length === 0){
-        console.log(operatorArray.length === 0);
         //keeps adding numbers to the end till we hit an operator
         calcArr1 += button;
         //what shows up visually on the screen
@@ -30,6 +29,7 @@ function press(button){
 // ********** SETOP - operation **********
 function setOP(opt){
     //checks the first numbers placement as well as length to make sure its set
+    //only set one opt value at a time
     if(calcArr1.length > 0 && operatorArray.length < 1){
         //pushes calcArr1 to operation array
         operatorArray.splice(0,1,calcArr1);
@@ -44,12 +44,13 @@ function calculate(){
     if(calcArr2.length > 0){
         operatorArray.splice(2,1,calcArr2);
 
-
-    var operationClac = eval(parseInt(operatorArray[0]) + operatorArray[1]+parseInt(operatorArray[2]));
+    var operationClacA = eval(parseFloat(operatorArray[0]) + operatorArray[1]+parseFloat(operatorArray[2]));
+    
+    // rounds to 2 deciamls with toFixed
+    var operationClac = operationClacA.toFixed(2);
 
     document.querySelector('#display').innerHTML = "";
-    document.querySelector('#display').innerHTML = ` ${operatorArray[0]}${operatorArray[1]}${operatorArray[2]} = <span> ${operationClac} </span>`;
-
+    document.querySelector('#display').innerHTML = `${operatorArray[0]}${operatorArray[1]}${operatorArray[2]} = <span> ${operationClac} </span>`;
 
     // sets calcArr1 (which is always in the 0 position) to our total, then it clears eveything else. Length should be no longer than 3 at any given time
     calcArr1 = [];
