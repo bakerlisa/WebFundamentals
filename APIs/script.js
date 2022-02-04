@@ -32,8 +32,6 @@ async function getCoderData() {
     "https://static.parade.com/wp-content/uploads/2020/03/spring-quotes.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1OZ91_CwoPXiNg53QYIm7jPp9SlTZ9V7IvpmtXyWbfk_iMuguQr4dZQFPBQSTbPNDGZs&usqp=CAU"];
 
-    console.log(seasons[0]);
-
     const dateArray = array[7].split("-");
 
     if(dateArray[1] == 12 || dateArray[1] == 01 || dateArray[1] == 02 || dateArray[1] == 03){

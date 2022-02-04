@@ -6,4 +6,17 @@
 
 main{background-repeat: no-repeat; background-size: cover; height:100vh; background-position: center; position: relative;}
     main:before{content:''; height:100%; width: 100%;background-color:rgba(0,0,0,.5); position: absolute; top: 0;left: 0; }
-.container{position: relative;z-index: 10;color:var(--white);text-align: center;}
+    main:after{content:''; height:100%; width: 100%; position: absolute; top: 0;left: 0;  background: rgb(0,212,255);
+        background: radial-gradient(circle, rgba(0,212,255,0.25) 0%, rgba(9,9,121,0.25) 35%, rgba(2,0,36,0.75) 100%);}
+.container{position: relative;z-index: 10;color:var(--white);text-align: center;  top: 50%; transform: translateY(-50%); max-width: 600px;margin: 0 auto;}
+.container h1{font-size: 50px;padding-bottom: 10px;}
+.container .summary{font-style: italic;}
+.icon{filter: invert(1);}
+
+.type{padding-top: 25px;color:#EB63D3; font-size: 20px;line-height: none;}
+.severity{color:#EEE6C3; text-transform: uppercase;}
+.high-low{color:#EBD77A; font-size: 25px; padding-top: 25px;}
+    .high-low > span:nth-child(1){padding-right: 15px;}
+    .high-low > span:nth-child(2){padding-left: 15px;}
+.high-low .up{font-size: 30px; padding-right: 5px;}
+.high-low .down{font-size: 30px;padding-right: 5px;}
