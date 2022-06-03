@@ -1,4 +1,4 @@
-# What's the Weather Son??
+# F to C? Because who wants to convert it in their head
 
 Simple fun layout to practice converting F to C and back again in JS
 
