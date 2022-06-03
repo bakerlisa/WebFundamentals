@@ -2,4 +2,4 @@
 
 Simple fun layout to practice converting F to C and back again in JS
 
-![](https://github.com/lisabroadhead/WebFun-Coding-Dojo/blob/main/1dzh.jpeg) 
+![](https://github.com/lisabroadhead/WebFundamentals/blob/main/JS/weatherDojo/Screen%20Recording%202022-06-03%20at%2011.48.58%20AM.gif) 
