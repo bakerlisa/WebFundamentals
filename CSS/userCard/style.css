@@ -47,7 +47,7 @@ body:before{content:'';  height:10px; width: 100%;}
 body.active:before{height:1000px; z-index: 100;  background-color:var(--lt-blue); position: absolute; bottom:0; left: 0; animation: waterRise 5s ease-in;}
 
 .chomp{display: none; transform:rotate(90deg); position: absolute; bottom:-350px; left: 0;right: 0; margin:0 auto; z-index: 101;}
-.active .chomp{ display: block; bottom:800px;  animation: sharkChase 5s ease-in 1s;}
+.active .chomp{ display: block; bottom:1000px;  animation: sharkChase 5s ease-in 1s;}
 
 /* speech */
 .speech-bubble{position: absolute; top: -150px; left: -225px; height:175px; text-align: center; display: none; opacity: 0;}
