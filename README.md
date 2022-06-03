@@ -5,6 +5,5 @@ Sometimes it's good to review what we already know! This is a fun folder! On the
 ## MY favorites!
 
 
-#### Don't take life so seriously!
-Dwight, you are full of such wisdom!<br/>
+#### Don't take life so seriously! And listen to Dwight, he's full of such wisdom!
 ![](https://github.com/lisabroadhead/WebFun-Coding-Dojo/blob/main/1dzh.jpeg) 
