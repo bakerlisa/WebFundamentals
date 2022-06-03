@@ -4,8 +4,8 @@ Sometimes it's good to review what we already know! This is a fun folder! On the
 
 ## MY favorites!
 1. Damn Sharks - https://github.com/lisabroadhead/WebFundamentals/tree/main/CSS/userCard
-2. OctoCat - https://github.com/lisabroadhead/WebFundamentals/tree/main/CSS/octoCat
-3. Find the Assassin - https://github.com/lisabroadhead/WebFundamentals/tree/main/CSS/portfolio
+2. Find the Assassin - https://github.com/lisabroadhead/WebFundamentals/tree/main/CSS/portfolio
+3. OctoCat - https://github.com/lisabroadhead/WebFundamentals/tree/main/CSS/octoCat
 
 
 ### API
