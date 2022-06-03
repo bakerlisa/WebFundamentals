@@ -9,7 +9,11 @@ Sometimes it's good to review what we already know! This is a fun folder! On the
 2. Find the Assassin - https://github.com/lisabroadhead/WebFundamentals/tree/main/CSS/portfolio
 3. OctoCat - https://github.com/lisabroadhead/WebFundamentals/tree/main/CSS/octoCat
 
-#### HTML
+#### JS
+1. Calculator - https://github.com/lisabroadhead/WebFundamentals/tree/main/JS/calculator
+2. Ticking Clock - https://github.com/lisabroadhead/WebFundamentals/tree/main/JS/clock
+3. Video Lab - https://github.com/lisabroadhead/WebFundamentals/blob/main/JS/videoLab/README.md
+4. F to C? - https://github.com/lisabroadhead/WebFundamentals/tree/main/JS/weatherDojo
 
 #### API
 1. Weather - https://github.com/lisabroadhead/WebFundamentals/tree/main/APIs
